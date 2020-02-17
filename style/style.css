@@ -795,10 +795,6 @@ html body menu hamburger > i:after {
   }
 }
 
-html body .about-me {
-  padding-bottom: 75px;
-}
-
 html body .about-me .container {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
   border-radius: 50px;
