@@ -1,0 +1,1218 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html body {
+  position: relative;
+  margin: 0;
+  overflow-x: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+html body header {
+  position: relative;
+  overflow-x: hidden;
+  height: 90vh;
+  width: 100%;
+}
+
+html body header .logo {
+  position: absolute;
+  padding: 20px;
+  left: 0;
+  top: 0;
+  text-align: center;
+  z-index: 20;
+}
+
+html body header .logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 60px;
+}
+
+html body header .logo a h1 {
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+@-webkit-keyframes move_wave {
+  0% {
+    -webkit-transform: translateX(0) translateZ(0) scaleY(1);
+            transform: translateX(0) translateZ(0) scaleY(1);
+  }
+  50% {
+    -webkit-transform: translateX(-25%) translateZ(0) scaleY(0.55);
+            transform: translateX(-25%) translateZ(0) scaleY(0.55);
+  }
+  100% {
+    -webkit-transform: translateX(-50%) translateZ(0) scaleY(1);
+            transform: translateX(-50%) translateZ(0) scaleY(1);
+  }
+}
+
+@keyframes move_wave {
+  0% {
+    -webkit-transform: translateX(0) translateZ(0) scaleY(1);
+            transform: translateX(0) translateZ(0) scaleY(1);
+  }
+  50% {
+    -webkit-transform: translateX(-25%) translateZ(0) scaleY(0.55);
+            transform: translateX(-25%) translateZ(0) scaleY(0.55);
+  }
+  100% {
+    -webkit-transform: translateX(-50%) translateZ(0) scaleY(1);
+            transform: translateX(-50%) translateZ(0) scaleY(1);
+  }
+}
+
+html body header .hero .waveWrapper {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+}
+
+html body header .hero .waveWrapper .waveWrapperInner {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  bottom: -1px;
+  background: linear-gradient(-45deg, #d523bd, #6030ff, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
+}
+
+html body header .hero .waveWrapper .bgTop {
+  z-index: 15;
+  opacity: 0.5;
+}
+
+html body header .hero .waveWrapper .bgMiddle {
+  z-index: 10;
+  opacity: 0.75;
+}
+
+html body header .hero .waveWrapper .bgBottom {
+  z-index: 5;
+}
+
+html body header .hero .waveWrapper .wave {
+  position: absolute;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-repeat: repeat no-repeat;
+  background-position: 0 bottom;
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+}
+
+html body header .hero .waveWrapper .waveTop {
+  background-size: 50% 100px;
+}
+
+html body header .hero .waveWrapper .waveMiddle {
+  background-size: 50% 120px;
+}
+
+html body header .hero .waveWrapper .waveBottom {
+  background-size: 50% 100px;
+}
+
+html body header .hero .waveAnimation .waveTop {
+  animation: move-wave 3s;
+  -webkit-animation: move-wave 3s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation: move_wave 8s linear infinite;
+          animation: move_wave 8s linear infinite;
+}
+
+html body header .hero .waveAnimation .waveMiddle {
+  -webkit-animation: move_wave 10s linear infinite;
+          animation: move_wave 10s linear infinite;
+}
+
+html body header .hero .waveAnimation .waveBottom {
+  -webkit-animation: move_wave 15s linear infinite;
+          animation: move_wave 15s linear infinite;
+}
+
+html body header .container {
+  position: absolute;
+  padding: 20px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  z-index: 15;
+}
+
+html body header .container .headline {
+  height: 150px;
+  position: relative;
+}
+
+html body header .container .headline a {
+  color: white;
+  text-decoration: none;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+html body header .container .headline a:hover {
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+}
+
+html body header .container .headline a .type-cursor {
+  -webkit-animation: blinker 1s step-start infinite;
+          animation: blinker 1s step-start infinite;
+}
+
+@-webkit-keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+html body header .container .headline a .button {
+  padding-top: 5px;
+  font-size: 25px;
+  opacity: 0;
+  -webkit-transition: opacity .8s ease-in;
+  transition: opacity .8s ease-in;
+  -webkit-animation: bounce 1s infinite alternate;
+          animation: bounce 1s infinite alternate;
+}
+
+@-webkit-keyframes bounce {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+
+@keyframes bounce {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+
+html body menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+}
+
+html body menu label {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+html body menu input[type=checkbox] {
+  display: none;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list {
+  -webkit-transform: translatex(0);
+          transform: translatex(0);
+  border-bottom-left-radius: 0;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li {
+  -webkit-transform: translatex(0);
+          transform: translatex(0);
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(1) {
+  -webkit-transition: -webkit-transform 0.5s 0.02s ease;
+  transition: -webkit-transform 0.5s 0.02s ease;
+  transition: transform 0.5s 0.02s ease;
+  transition: transform 0.5s 0.02s ease, -webkit-transform 0.5s 0.02s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(2) {
+  -webkit-transition: -webkit-transform 0.5s 0.04s ease;
+  transition: -webkit-transform 0.5s 0.04s ease;
+  transition: transform 0.5s 0.04s ease;
+  transition: transform 0.5s 0.04s ease, -webkit-transform 0.5s 0.04s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(3) {
+  -webkit-transition: -webkit-transform 0.5s 0.06s ease;
+  transition: -webkit-transform 0.5s 0.06s ease;
+  transition: transform 0.5s 0.06s ease;
+  transition: transform 0.5s 0.06s ease, -webkit-transform 0.5s 0.06s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(4) {
+  -webkit-transition: -webkit-transform 0.5s 0.08s ease;
+  transition: -webkit-transform 0.5s 0.08s ease;
+  transition: transform 0.5s 0.08s ease;
+  transition: transform 0.5s 0.08s ease, -webkit-transform 0.5s 0.08s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(5) {
+  -webkit-transition: -webkit-transform 0.5s 0.1s ease;
+  transition: -webkit-transform 0.5s 0.1s ease;
+  transition: transform 0.5s 0.1s ease;
+  transition: transform 0.5s 0.1s ease, -webkit-transform 0.5s 0.1s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(6) {
+  -webkit-transition: -webkit-transform 0.5s 0.12s ease;
+  transition: -webkit-transform 0.5s 0.12s ease;
+  transition: transform 0.5s 0.12s ease;
+  transition: transform 0.5s 0.12s ease, -webkit-transform 0.5s 0.12s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(7) {
+  -webkit-transition: -webkit-transform 0.5s 0.14s ease;
+  transition: -webkit-transform 0.5s 0.14s ease;
+  transition: transform 0.5s 0.14s ease;
+  transition: transform 0.5s 0.14s ease, -webkit-transform 0.5s 0.14s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(8) {
+  -webkit-transition: -webkit-transform 0.5s 0.16s ease;
+  transition: -webkit-transform 0.5s 0.16s ease;
+  transition: transform 0.5s 0.16s ease;
+  transition: transform 0.5s 0.16s ease, -webkit-transform 0.5s 0.16s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(9) {
+  -webkit-transition: -webkit-transform 0.5s 0.18s ease;
+  transition: -webkit-transform 0.5s 0.18s ease;
+  transition: transform 0.5s 0.18s ease;
+  transition: transform 0.5s 0.18s ease, -webkit-transform 0.5s 0.18s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(10) {
+  -webkit-transition: -webkit-transform 0.5s 0.2s ease;
+  transition: -webkit-transform 0.5s 0.2s ease;
+  transition: transform 0.5s 0.2s ease;
+  transition: transform 0.5s 0.2s ease, -webkit-transform 0.5s 0.2s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(11) {
+  -webkit-transition: -webkit-transform 0.5s 0.22s ease;
+  transition: -webkit-transform 0.5s 0.22s ease;
+  transition: transform 0.5s 0.22s ease;
+  transition: transform 0.5s 0.22s ease, -webkit-transform 0.5s 0.22s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(12) {
+  -webkit-transition: -webkit-transform 0.5s 0.24s ease;
+  transition: -webkit-transform 0.5s 0.24s ease;
+  transition: transform 0.5s 0.24s ease;
+  transition: transform 0.5s 0.24s ease, -webkit-transform 0.5s 0.24s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(13) {
+  -webkit-transition: -webkit-transform 0.5s 0.26s ease;
+  transition: -webkit-transform 0.5s 0.26s ease;
+  transition: transform 0.5s 0.26s ease;
+  transition: transform 0.5s 0.26s ease, -webkit-transform 0.5s 0.26s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(14) {
+  -webkit-transition: -webkit-transform 0.5s 0.28s ease;
+  transition: -webkit-transform 0.5s 0.28s ease;
+  transition: transform 0.5s 0.28s ease;
+  transition: transform 0.5s 0.28s ease, -webkit-transform 0.5s 0.28s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(15) {
+  -webkit-transition: -webkit-transform 0.5s 0.3s ease;
+  transition: -webkit-transform 0.5s 0.3s ease;
+  transition: transform 0.5s 0.3s ease;
+  transition: transform 0.5s 0.3s ease, -webkit-transform 0.5s 0.3s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(16) {
+  -webkit-transition: -webkit-transform 0.5s 0.32s ease;
+  transition: -webkit-transform 0.5s 0.32s ease;
+  transition: transform 0.5s 0.32s ease;
+  transition: transform 0.5s 0.32s ease, -webkit-transform 0.5s 0.32s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(17) {
+  -webkit-transition: -webkit-transform 0.5s 0.34s ease;
+  transition: -webkit-transform 0.5s 0.34s ease;
+  transition: transform 0.5s 0.34s ease;
+  transition: transform 0.5s 0.34s ease, -webkit-transform 0.5s 0.34s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(18) {
+  -webkit-transition: -webkit-transform 0.5s 0.36s ease;
+  transition: -webkit-transform 0.5s 0.36s ease;
+  transition: transform 0.5s 0.36s ease;
+  transition: transform 0.5s 0.36s ease, -webkit-transform 0.5s 0.36s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(19) {
+  -webkit-transition: -webkit-transform 0.5s 0.38s ease;
+  transition: -webkit-transform 0.5s 0.38s ease;
+  transition: transform 0.5s 0.38s ease;
+  transition: transform 0.5s 0.38s ease, -webkit-transform 0.5s 0.38s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(20) {
+  -webkit-transition: -webkit-transform 0.5s 0.4s ease;
+  transition: -webkit-transform 0.5s 0.4s ease;
+  transition: transform 0.5s 0.4s ease;
+  transition: transform 0.5s 0.4s ease, -webkit-transform 0.5s 0.4s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(21) {
+  -webkit-transition: -webkit-transform 0.5s 0.42s ease;
+  transition: -webkit-transform 0.5s 0.42s ease;
+  transition: transform 0.5s 0.42s ease;
+  transition: transform 0.5s 0.42s ease, -webkit-transform 0.5s 0.42s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(22) {
+  -webkit-transition: -webkit-transform 0.5s 0.44s ease;
+  transition: -webkit-transform 0.5s 0.44s ease;
+  transition: transform 0.5s 0.44s ease;
+  transition: transform 0.5s 0.44s ease, -webkit-transform 0.5s 0.44s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(23) {
+  -webkit-transition: -webkit-transform 0.5s 0.46s ease;
+  transition: -webkit-transform 0.5s 0.46s ease;
+  transition: transform 0.5s 0.46s ease;
+  transition: transform 0.5s 0.46s ease, -webkit-transform 0.5s 0.46s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(24) {
+  -webkit-transition: -webkit-transform 0.5s 0.48s ease;
+  transition: -webkit-transform 0.5s 0.48s ease;
+  transition: transform 0.5s 0.48s ease;
+  transition: transform 0.5s 0.48s ease, -webkit-transform 0.5s 0.48s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(25) {
+  -webkit-transition: -webkit-transform 0.5s 0.5s ease;
+  transition: -webkit-transform 0.5s 0.5s ease;
+  transition: transform 0.5s 0.5s ease;
+  transition: transform 0.5s 0.5s ease, -webkit-transform 0.5s 0.5s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(26) {
+  -webkit-transition: -webkit-transform 0.5s 0.52s ease;
+  transition: -webkit-transform 0.5s 0.52s ease;
+  transition: transform 0.5s 0.52s ease;
+  transition: transform 0.5s 0.52s ease, -webkit-transform 0.5s 0.52s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(27) {
+  -webkit-transition: -webkit-transform 0.5s 0.54s ease;
+  transition: -webkit-transform 0.5s 0.54s ease;
+  transition: transform 0.5s 0.54s ease;
+  transition: transform 0.5s 0.54s ease, -webkit-transform 0.5s 0.54s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(28) {
+  -webkit-transition: -webkit-transform 0.5s 0.56s ease;
+  transition: -webkit-transform 0.5s 0.56s ease;
+  transition: transform 0.5s 0.56s ease;
+  transition: transform 0.5s 0.56s ease, -webkit-transform 0.5s 0.56s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(29) {
+  -webkit-transition: -webkit-transform 0.5s 0.58s ease;
+  transition: -webkit-transform 0.5s 0.58s ease;
+  transition: transform 0.5s 0.58s ease;
+  transition: transform 0.5s 0.58s ease, -webkit-transform 0.5s 0.58s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(30) {
+  -webkit-transition: -webkit-transform 0.5s 0.6s ease;
+  transition: -webkit-transform 0.5s 0.6s ease;
+  transition: transform 0.5s 0.6s ease;
+  transition: transform 0.5s 0.6s ease, -webkit-transform 0.5s 0.6s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(31) {
+  -webkit-transition: -webkit-transform 0.5s 0.62s ease;
+  transition: -webkit-transform 0.5s 0.62s ease;
+  transition: transform 0.5s 0.62s ease;
+  transition: transform 0.5s 0.62s ease, -webkit-transform 0.5s 0.62s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(32) {
+  -webkit-transition: -webkit-transform 0.5s 0.64s ease;
+  transition: -webkit-transform 0.5s 0.64s ease;
+  transition: transform 0.5s 0.64s ease;
+  transition: transform 0.5s 0.64s ease, -webkit-transform 0.5s 0.64s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(33) {
+  -webkit-transition: -webkit-transform 0.5s 0.66s ease;
+  transition: -webkit-transform 0.5s 0.66s ease;
+  transition: transform 0.5s 0.66s ease;
+  transition: transform 0.5s 0.66s ease, -webkit-transform 0.5s 0.66s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(34) {
+  -webkit-transition: -webkit-transform 0.5s 0.68s ease;
+  transition: -webkit-transform 0.5s 0.68s ease;
+  transition: transform 0.5s 0.68s ease;
+  transition: transform 0.5s 0.68s ease, -webkit-transform 0.5s 0.68s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(35) {
+  -webkit-transition: -webkit-transform 0.5s 0.7s ease;
+  transition: -webkit-transform 0.5s 0.7s ease;
+  transition: transform 0.5s 0.7s ease;
+  transition: transform 0.5s 0.7s ease, -webkit-transform 0.5s 0.7s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(36) {
+  -webkit-transition: -webkit-transform 0.5s 0.72s ease;
+  transition: -webkit-transform 0.5s 0.72s ease;
+  transition: transform 0.5s 0.72s ease;
+  transition: transform 0.5s 0.72s ease, -webkit-transform 0.5s 0.72s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(37) {
+  -webkit-transition: -webkit-transform 0.5s 0.74s ease;
+  transition: -webkit-transform 0.5s 0.74s ease;
+  transition: transform 0.5s 0.74s ease;
+  transition: transform 0.5s 0.74s ease, -webkit-transform 0.5s 0.74s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(38) {
+  -webkit-transition: -webkit-transform 0.5s 0.76s ease;
+  transition: -webkit-transform 0.5s 0.76s ease;
+  transition: transform 0.5s 0.76s ease;
+  transition: transform 0.5s 0.76s ease, -webkit-transform 0.5s 0.76s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(39) {
+  -webkit-transition: -webkit-transform 0.5s 0.78s ease;
+  transition: -webkit-transform 0.5s 0.78s ease;
+  transition: transform 0.5s 0.78s ease;
+  transition: transform 0.5s 0.78s ease, -webkit-transform 0.5s 0.78s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(40) {
+  -webkit-transition: -webkit-transform 0.5s 0.8s ease;
+  transition: -webkit-transform 0.5s 0.8s ease;
+  transition: transform 0.5s 0.8s ease;
+  transition: transform 0.5s 0.8s ease, -webkit-transform 0.5s 0.8s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(41) {
+  -webkit-transition: -webkit-transform 0.5s 0.82s ease;
+  transition: -webkit-transform 0.5s 0.82s ease;
+  transition: transform 0.5s 0.82s ease;
+  transition: transform 0.5s 0.82s ease, -webkit-transform 0.5s 0.82s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(42) {
+  -webkit-transition: -webkit-transform 0.5s 0.84s ease;
+  transition: -webkit-transform 0.5s 0.84s ease;
+  transition: transform 0.5s 0.84s ease;
+  transition: transform 0.5s 0.84s ease, -webkit-transform 0.5s 0.84s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(43) {
+  -webkit-transition: -webkit-transform 0.5s 0.86s ease;
+  transition: -webkit-transform 0.5s 0.86s ease;
+  transition: transform 0.5s 0.86s ease;
+  transition: transform 0.5s 0.86s ease, -webkit-transform 0.5s 0.86s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(44) {
+  -webkit-transition: -webkit-transform 0.5s 0.88s ease;
+  transition: -webkit-transform 0.5s 0.88s ease;
+  transition: transform 0.5s 0.88s ease;
+  transition: transform 0.5s 0.88s ease, -webkit-transform 0.5s 0.88s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(45) {
+  -webkit-transition: -webkit-transform 0.5s 0.9s ease;
+  transition: -webkit-transform 0.5s 0.9s ease;
+  transition: transform 0.5s 0.9s ease;
+  transition: transform 0.5s 0.9s ease, -webkit-transform 0.5s 0.9s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(46) {
+  -webkit-transition: -webkit-transform 0.5s 0.92s ease;
+  transition: -webkit-transform 0.5s 0.92s ease;
+  transition: transform 0.5s 0.92s ease;
+  transition: transform 0.5s 0.92s ease, -webkit-transform 0.5s 0.92s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(47) {
+  -webkit-transition: -webkit-transform 0.5s 0.94s ease;
+  transition: -webkit-transform 0.5s 0.94s ease;
+  transition: transform 0.5s 0.94s ease;
+  transition: transform 0.5s 0.94s ease, -webkit-transform 0.5s 0.94s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(48) {
+  -webkit-transition: -webkit-transform 0.5s 0.96s ease;
+  transition: -webkit-transform 0.5s 0.96s ease;
+  transition: transform 0.5s 0.96s ease;
+  transition: transform 0.5s 0.96s ease, -webkit-transform 0.5s 0.96s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(49) {
+  -webkit-transition: -webkit-transform 0.5s 0.98s ease;
+  transition: -webkit-transform 0.5s 0.98s ease;
+  transition: transform 0.5s 0.98s ease;
+  transition: transform 0.5s 0.98s ease, -webkit-transform 0.5s 0.98s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li:nth-child(50) {
+  -webkit-transition: -webkit-transform 0.5s 1s ease;
+  transition: -webkit-transform 0.5s 1s ease;
+  transition: transform 0.5s 1s ease;
+  transition: transform 0.5s 1s ease, -webkit-transform 0.5s 1s ease;
+}
+
+html body menu input[type=checkbox]:checked + .drawer-list li a {
+  padding-right: 15px;
+}
+
+html body menu input[type=checkbox]:checked ~ hamburger > i {
+  -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0);
+          box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0);
+  background-color: transparent;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+html body menu input[type=checkbox]:checked ~ hamburger > i:before {
+  -webkit-transform: translate(-50%, -50%) rotate(315deg);
+          transform: translate(-50%, -50%) rotate(315deg);
+}
+
+html body menu input[type=checkbox]:checked ~ hamburger > i:after {
+  -webkit-transform: translate(-50%, -50%) rotate(-315deg);
+          transform: translate(-50%, -50%) rotate(-315deg);
+}
+
+html body menu .drawer-list {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  -webkit-transform: translate(100vw, 0);
+          transform: translate(100vw, 0);
+  -ms-transform: translatex(-100vw);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  pointer-events: none;
+  padding-top: 125px;
+  -webkit-transition: width 475ms ease-out, border-radius .8s .1s ease, -webkit-transform 450ms ease;
+  transition: width 475ms ease-out, border-radius .8s .1s ease, -webkit-transform 450ms ease;
+  transition: width 475ms ease-out, transform 450ms ease, border-radius .8s .1s ease;
+  transition: width 475ms ease-out, transform 450ms ease, border-radius .8s .1s ease, -webkit-transform 450ms ease;
+  border-bottom-left-radius: 100vw;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+html body menu .drawer-list ul {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  overflow-x: hidden;
+  pointer-events: auto;
+  text-align: center;
+}
+
+html body menu .drawer-list li {
+  list-style: none;
+  text-transform: uppercase;
+  pointer-events: auto;
+  white-space: nowrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transform: translatex(100vw);
+          transform: translatex(100vw);
+  -ms-transform: translatex(-100vw);
+}
+
+html body menu .drawer-list li:last-child {
+  margin-bottom: 2em;
+}
+
+html body menu .drawer-list li a {
+  text-decoration: none;
+  color: #FEFEFE;
+  text-align: center;
+  display: block;
+  padding: .5rem;
+  font-size: 1.2em;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  -webkit-transition: ease-in-out .3s;
+  transition: ease-in-out .3s;
+}
+
+html body menu .drawer-list li a:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+html body menu hamburger {
+  position: absolute;
+  display: block;
+  top: 20px;
+  right: 20px;
+  height: 50px;
+  width: 50px;
+}
+
+html body menu hamburger:hover {
+  cursor: pointer;
+}
+
+html body menu hamburger > i {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 50%;
+  background-color: #FEFEFE;
+  pointer-events: auto;
+  -webkit-transition-duration: .35s;
+          transition-duration: .35s;
+  -webkit-transition-delay: .35s;
+          transition-delay: .35s;
+  -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+html body menu hamburger > i:before {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  left: 50%;
+  background: #FEFEFE;
+  content: "";
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  transition: transform 0.35s, -webkit-transform 0.35s;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: translate(-50%, -14px);
+          transform: translate(-50%, -14px);
+  -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+html body menu hamburger > i:after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  left: 50%;
+  background: #FEFEFE;
+  content: "";
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  transition: transform 0.35s, -webkit-transform 0.35s;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: translate(-50%, 14px);
+          transform: translate(-50%, 14px);
+  -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 768px) {
+  html body menu .drawer-list {
+    width: 25vw;
+  }
+  html body menu .drawer-list li a {
+    font-size: 1rem;
+  }
+}
+
+html body .about-me {
+  padding-bottom: 75px;
+}
+
+html body .about-me .container {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+  background: linear-gradient(350deg, #fbfbfb 0%, #ededed 100%);
+  -webkit-box-shadow: 5px 10px 10px -8px rgba(0, 0, 0, 0.75);
+          box-shadow: 5px 10px 10px -8px rgba(0, 0, 0, 0.75);
+}
+
+html body .about-me .container .row .progress-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 10px 0;
+}
+
+html body .about-me .container .row .progress {
+  height: 20px;
+  line-height: 15px;
+  border-radius: 5px;
+  background: #fff;
+  margin-bottom: 30px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  overflow: hidden;
+  border-radius: 30px;
+  -webkit-box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.4);
+          box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.4);
+}
+
+html body .about-me .container .row .progress .progress-bar {
+  position: relative;
+  border-radius: 0;
+  opacity: 0;
+}
+
+html body .about-me .container .row .progress .progress .progress-value {
+  display: block;
+  font-size: 13px;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 8px;
+}
+
+@-webkit-keyframes animate-positive {
+  0% {
+    width: 0%;
+  }
+}
+
+@keyframes animate-positive {
+  0% {
+    width: 0%;
+  }
+}
+
+html body .about-me .container .row .text-color-info {
+  color: #38befc;
+}
+
+html body .about-me .container .row .gradient-box {
+  border: 1px solid #eee;
+  -webkit-box-shadow: 5px 10px 10px -8px rgba(0, 0, 0, 0.75);
+          box-shadow: 5px 10px 10px -8px rgba(0, 0, 0, 0.75);
+}
+
+html body .about-me .container .row .avatar {
+  position: relative;
+  height: 0;
+  padding-bottom: 100%;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+html body .about-me .container .row .avatar img {
+  position: absolute;
+  width: 100%;
+  height: 111%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+html body .about-me .container .row .slider-container {
+  height: 180px;
+}
+
+html body .about-me .container .row .slider-container .slick-slide {
+  outline: none;
+}
+
+html body .about-me .container .row .slider-container .box {
+  height: 200px;
+}
+
+html body .about-me .container .row .slider-container img {
+  height: 70%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+html body .portofolio {
+  position: relative;
+  background-image: url(../img/codejpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+}
+
+html body .portofolio .filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(-45deg, #d523bd, #8528ff, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
+  width: 100%;
+  height: 100%;
+  opacity: .7;
+}
+
+html body .portofolio .container {
+  position: relative;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+html body .portofolio .container .row .card {
+  border-radius: 50px;
+  background: linear-gradient(350deg, #fbfbfb 0%, #ededed 100%);
+  -webkit-box-shadow: 5px 10px 10px -8px rgba(0, 0, 0, 0.75);
+          box-shadow: 5px 10px 10px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: transparent;
+  border: none;
+}
+
+html body .portofolio .container .row .card .buttons {
+  text-align: center;
+}
+
+html body .portofolio .container .row .card .buttons a {
+  outline: none;
+}
+
+html body .portofolio .container .row .card .buttons a .btn-hover {
+  width: 90%;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+  height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+html body .portofolio .container .row .card .buttons a .btn-hover:hover {
+  background-position: 100% 0;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+html body .portofolio .container .row .card .buttons a .btn-hover.color-1 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#25aae1), color-stop(#40e495), color-stop(#30dd8a), to(#2bb673));
+  background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+  -webkit-box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+          box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+html body .portofolio .container .row .card .buttons a .btn-hover.color-2 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#f5ce62), color-stop(#e43603), color-stop(#fa7199), to(#e85a19));
+  background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
+  -webkit-box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+          box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+}
+
+html body .portofolio .container .row .card .buttons a .btn-hover.color-3 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#667eea), color-stop(#764ba2), color-stop(#6B8DD6), to(#8E37D7));
+  background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+  -webkit-box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+          box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
+
+html body .portofolio .container .row .card .buttons a .btn-hover.color-4 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#fc6076), color-stop(#ff9a44), color-stop(#ef9d43), to(#e75516));
+  background-image: linear-gradient(to right, #fc6076, #ff9a44, #ef9d43, #e75516);
+  -webkit-box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+          box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+}
+
+html body .portofolio .container .row .card .buttons a .btn-hover.color-5 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#0ba360), color-stop(#3cba92), color-stop(#30dd8a), to(#2bb673));
+  background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673);
+  -webkit-box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+          box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+}
+
+html body .portofolio .container .row .card .buttons a .btn-hover.color-6 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#009245), color-stop(#FCEE21), color-stop(#00A8C5), to(#D9E021));
+  background-image: linear-gradient(to right, #009245, #FCEE21, #00A8C5, #D9E021);
+  -webkit-box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
+          box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
+}
+
+html body .portofolio .container .row .card .buttons a .btn-hover.color-7 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#6253e1), color-stop(#852D91), color-stop(#A3A1FF), to(#F24645));
+  background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+  -webkit-box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+          box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
+
+html body .portofolio .container .row .card .buttons a .btn-hover.color-8 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#29323c), color-stop(#485563), color-stop(#2b5876), to(#4e4376));
+  background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+  -webkit-box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+          box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+}
+
+html body .portofolio .container .row .card .buttons a .btn-hover.color-9 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#25aae1), color-stop(#4481eb), color-stop(#04befe), to(#3f86ed));
+  background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+  -webkit-box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+          box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
+
+html body .portofolio .container .row .card .buttons a .btn-hover.color-10 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#ed6ea0), color-stop(#ec8c69), color-stop(#f7186a), to(#FBB03B));
+  background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a, #FBB03B);
+  -webkit-box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+          box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+}
+
+html body .portofolio .container .row .card .buttons a .btn-hover.color-11 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#eb3941), color-stop(#f15e64), color-stop(#e14e53), to(#e2373f));
+  background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);
+  -webkit-box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
+          box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
+}
+
+html body .contact {
+  position: relative;
+}
+
+html body .contact .container {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+  background: linear-gradient(350deg, #fbfbfb 0%, #ededed 100%);
+  -webkit-box-shadow: 5px 10px 10px -8px rgba(0, 0, 0, 0.75);
+          box-shadow: 5px 10px 10px -8px rgba(0, 0, 0, 0.75);
+}
+
+html body .contact .container .row i {
+  font-size: 1.3rem;
+  padding-right: 10px;
+}
+
+html body .contact .container .row p {
+  font-size: 1rem;
+}
+
+html body .contact .container .row .buttons a {
+  outline: none;
+}
+
+html body .contact .container .row .buttons a .btn-hover {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: auto;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+  height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+html body .contact .container .row .buttons a .btn-hover:hover {
+  background-position: 100% 0;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+html body .contact .container .row .buttons a .btn-hover.color-1 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#25aae1), color-stop(#40e495), color-stop(#30dd8a), to(#2bb673));
+  background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+  -webkit-box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+          box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+html body .contact .container .row .buttons a .btn-hover.color-2 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#f5ce62), color-stop(#e43603), color-stop(#fa7199), to(#e85a19));
+  background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
+  -webkit-box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+          box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+}
+
+html body .contact .container .row .buttons a .btn-hover.color-3 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#667eea), color-stop(#764ba2), color-stop(#6B8DD6), to(#8E37D7));
+  background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+  -webkit-box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+          box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
+
+html body .contact .container .row .buttons a .btn-hover.color-4 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#fc6076), color-stop(#ff9a44), color-stop(#ef9d43), to(#e75516));
+  background-image: linear-gradient(to right, #fc6076, #ff9a44, #ef9d43, #e75516);
+  -webkit-box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+          box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+}
+
+html body .contact .container .row .buttons a .btn-hover.color-5 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#0ba360), color-stop(#3cba92), color-stop(#30dd8a), to(#2bb673));
+  background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673);
+  -webkit-box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+          box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+}
+
+html body .contact .container .row .buttons a .btn-hover.color-6 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#009245), color-stop(#FCEE21), color-stop(#00A8C5), to(#D9E021));
+  background-image: linear-gradient(to right, #009245, #FCEE21, #00A8C5, #D9E021);
+  -webkit-box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
+          box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
+}
+
+html body .contact .container .row .buttons a .btn-hover.color-7 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#6253e1), color-stop(#852D91), color-stop(#A3A1FF), to(#F24645));
+  background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+  -webkit-box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+          box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
+
+html body .contact .container .row .buttons a .btn-hover.color-8 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#29323c), color-stop(#485563), color-stop(#2b5876), to(#4e4376));
+  background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+  -webkit-box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+          box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+}
+
+html body .contact .container .row .buttons a .btn-hover.color-9 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#25aae1), color-stop(#4481eb), color-stop(#04befe), to(#3f86ed));
+  background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+  -webkit-box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+          box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
+
+html body .contact .container .row .buttons a .btn-hover.color-10 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#ed6ea0), color-stop(#ec8c69), color-stop(#f7186a), to(#FBB03B));
+  background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a, #FBB03B);
+  -webkit-box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+          box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+}
+
+html body .contact .container .row .buttons a .btn-hover.color-11 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#eb3941), color-stop(#f15e64), color-stop(#e14e53), to(#e2373f));
+  background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);
+  -webkit-box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
+          box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
+}
+
+html body footer {
+  width: 100vw;
+  bottom: 0px;
+}
+
+html body footer svg {
+  width: 100%;
+  overflow: visible;
+}
+
+html body footer .wave {
+  -webkit-animation: wave 3s linear;
+          animation: wave 3s linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  fill: #6a6bd4;
+}
+
+html body footer #wave2 {
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  animation-direction: reverse;
+  opacity: .6;
+}
+
+html body footer #wave3 {
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+  opacity: .3;
+}
+
+@-webkit-keyframes wave {
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes wave {
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+/*# sourceMappingURL=style.css.map */

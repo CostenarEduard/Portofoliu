@@ -1,0 +1,629 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+	position: relative;
+	height: 40px;
+	padding: 10px 60px;
+}
+
+header .small-nav {
+    top: 0;
+    left: 0;
+	width: 100%;
+	height: 40px;
+	position: fixed;
+	display: flex;
+	box-sizing: border-box;
+	z-index: 2;
+}
+
+header img {
+	height: 25px;
+    width: 30px;
+	margin: 7px auto;
+	display: none;
+}
+
+header .menu {
+	color: #757575;
+	font-size: 16px;
+    position: absolute;
+    top: 10px;
+	left: 10px;
+	cursor: pointer;
+}
+
+header .side-nav {
+	top: 0;
+    width: 215px;
+	height: 100%;
+	z-index: 10;
+	position: fixed;
+	overflow:scroll;
+	padding: 10px 10px 10px 20px;
+	background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	transition: all 0.4s;
+	left: -260px;
+}
+
+header .side-nav ul {
+	list-style: none;
+}
+
+header .side-nav ul li {
+	margin-top: 0.5em;
+}
+
+header .side-nav ul li a {
+	text-decoration: none;
+	padding-bottom: 3px;
+	color: #304455;
+	font-size: 14px;
+}
+
+header .side-nav ul li a:hover {
+	border-bottom: 3px solid #42b983;
+	color: #4f5959;
+}
+
+header .side-nav ul li h4 {
+	font-size: 14px;
+	color: #304455;
+	margin-top: 0.5em;
+	padding: 0 0 0 10px;
+	font-weight: 500;
+    border-top: none;
+} 
+
+header .side-nav ul li form {
+	position: relative;
+}
+
+header .side-nav ul li form input {
+	height: 30px;
+    line-height: 30px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    border: 1px solid #e3e3e3;
+    color: #273849;
+    outline: none;
+    padding: 0 15px 0 30px;
+    transition: border-color 0.2s ease;
+}
+
+header .side-nav ul li form input:focus {
+	border-color: #42b983;
+}
+
+header .side-nav ul li form i {
+	position: absolute;
+    top: 9px;
+    left: 7px;
+    color: #e3e3e3;
+    font-size: 14px;
+}
+
+header span {
+	float: left;
+	font-family: 'Dosis', sans-serif;
+	color: #273849;
+	font-size: 29px;
+	font-weight: 500;
+}
+
+header nav {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    height: 40px;
+    line-height: 40px;
+    z-index: 1;
+}
+
+header nav ul {
+	list-style: none;
+}
+
+header nav ul li {
+	direction: rtl;
+	display: inline-block;
+    margin: 0 0.8em;
+}
+
+header nav ul li a {
+	text-decoration: none;
+	padding-bottom: 3px;
+	color: #304455;
+}
+
+header nav ul li .dropdown {
+	font-family: "Source Sans Pro", sans-serif;
+	display: none;
+    overflow-y: auto;
+    position: absolute;
+    background-color: #fff;
+    padding: 10px 0;
+    border: 1px solid #ddd;
+    border-bottom-color: #ccc;
+    text-align: left;
+    border-radius: 4px;
+    white-space: nowrap;
+	margin-right: -12px;
+	top: 40px;
+}
+
+header .dropdown li h4 {
+	font-weight: 600;
+	line-height: 28.8px;
+	font-size: 16px;
+	padding: 0 24px 0 20px;
+	letter-spacing: 0.2px;
+}
+
+header .dropdown li ul li {
+	padding: 0 24px 0 20px;
+}
+
+header .dropdown a:hover {
+	color: #42b983;
+}
+
+header nav .dropdown .section {
+	margin: 0.45em 0 0;
+    padding-top: 0.45em;
+    border-top: 1px solid #eee;
+}
+
+header .dropdown .menustyle2 {
+	padding: 0 24px 0 20px;
+}
+
+header nav ul li:hover .dropdown {
+	display: block;
+}
+
+header nav ul li .dropdown li {
+	line-height: 1.8em;
+    margin: 0;
+    display: block;
+    position: relative;
+}
+
+header nav ul li .arrow {
+	position: absolute;
+	margin: 19px -12px 0px;
+	border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid #4f5959;
+}
+
+header nav ul li form input {
+	height: 30px;
+    line-height: 30px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    border: 1px solid #e3e3e3;
+    color: #273849;
+    outline: none;
+    padding: 0 15px 0 30px;
+    transition: border-color 0.2s ease;
+}
+
+header nav ul li form input:focus {
+	border-color: #42b983;
+}
+
+header nav ul li form i {
+	position: absolute;
+	top: 15px;
+	left: 20px;
+	color: #e3e3e3;
+	font-size: 14px;
+}
+
+header nav .underline:hover {
+	border-bottom: 3px solid #42b983;;
+}
+
+main .section1 {
+	padding: 40px 40px 30px 40px;
+	height: auto;
+}
+
+main .section1 .center {
+	max-width: 1260px;
+	height: auto;
+	margin: 0px auto;
+	box-sizing: border-box;
+}
+
+main .section1 .center .left {
+	width: calc(39% - 2px);
+	display: inline-block;
+	vertical-align: top;
+}
+
+main .section1 .center .right {
+	width: calc(61% - 2px);
+	display: inline-block;
+	vertical-align: top;
+}
+
+main .section1 .left img {
+	float: right;
+	width: 215px;
+	margin-right: 60px;
+	margin-top: 14px;
+}
+
+main .section1 .right .vue {
+    font-family: 'Dosis', sans-serif;
+    color: #273849;
+    font-size: 32px;
+    font-weight: 500;
+    margin: 22px 0 10px;
+}
+
+main .section1 .right h1 {
+	font-weight: 300;
+	font-size: 3.2em;
+	color: #273849;
+}
+
+main p {
+	word-spacing: 0.05em;
+	display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+main .right .button {
+	position: relative;
+	display: inline-block;
+	text-decoration: none;
+	margin: 1em 0;
+	font-size: 1.05em;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    min-width: 8em;
+    text-align: center;
+    padding: 0.75em 2em;
+    border-radius: 2em;
+    box-sizing: border-box;
+    transition: all 0.15s ease;
+    text-transform: uppercase;
+}
+
+main .right .first {
+	background-color: #4fc08d;
+	color: #fff;
+	text-indent: 1.4em;
+	margin-right: 1%;
+}
+
+main .right .second {
+	border: 1px solid #4fc08d;
+	color: #4fc08d;
+	margin-right: 1%;
+}
+
+main .right .third {
+	background-color: #f6f6f6;
+	text-indent: 1.4em;
+	color: #4f5959;
+}
+
+main .right .logo-1 {
+	position: absolute;
+	font-size: 32px;
+	color: white;
+	top: 7px;
+    left: -16px;
+}
+
+main .right .logo-2 {
+	position: absolute;
+	font-size: 33px;
+	color: #7f8c8d;
+	top: 7px;
+    left: -16px;
+}
+
+main .section2 {
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+main .section2 h3 {
+	font-weight: 600;
+    color: #273849;
+}
+
+main .section2 a {
+	list-style: none;
+}
+
+main .section2 a img {
+	width: 160px;
+	margin: 15px;
+	display: inline-block;
+    vertical-align: middle;
+}
+
+main .section2 a span {
+	display: inline-block;
+    vertical-align: middle;
+	color: #4f5959;
+}
+
+main .section3 {
+	padding-bottom: 70px;
+}
+
+main .section3 .center {
+	max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main .section3 .center .point {
+	display: inline-block;
+	width: 33%;
+	vertical-align: top;
+    box-sizing: border-box;
+    padding: 0 2em;
+}
+
+main .section3 .center .point h2 {
+	color: #42b983;
+    font-size: 1.5em;
+    font-weight: 400;
+    margin: 0;
+    padding: 0.5em 0;
+}
+
+main .section3 .center .point p {
+	color: #4f5959;
+}
+
+main .section4 {
+	text-align: center;
+    padding: 35px 40px 45px;
+    background-color: #f6f6f6;
+}
+
+main .section4 .center {
+	max-width: 700px;
+    margin: 0px auto;
+}
+
+main .section4 .center h3 {
+	color: #999;
+    margin: 0 0 10px;
+    font-weight: 600;
+}
+
+main .section4 .center .sponsors {
+	margin: 20px 15px 0;
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+}
+
+main .section4 .center .first {
+	width: 160px;
+	vertical-align: middle;
+
+}
+
+main .section4 .center img {
+    filter: grayscale(100%);
+    opacity: 0.66;
+}
+
+main .section4 .center img:hover {
+	transition: all 0.3s ease;
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+main .section4 .center .second, img {
+	width: 120px;
+	vertical-align: middle;
+}
+
+main .section4 .center .sponsor-button {
+	text-decoration: none;
+	color: #42b983;
+	margin-top: 40px;
+	display: inline-block;
+    border: 1px solid;
+    padding: 0.75em 2em;
+    border-radius: 2em;
+    font-size: 0.9em;
+    background-color: transparent;
+    font-weight: 600;
+}
+
+main .section4 .center .open-collective-sponsors {
+	margin-top: 60px;
+}
+
+main .section4 .center .open-collective-sponsors h3 {
+	color: #999;
+    margin: 0 0 10px;
+}
+
+main .section4 .center .open-collective-sponsors h4 {
+	color: #999;
+    margin: 1.33em 0 0 0;
+}
+
+main .section4 .center .open-collective-sponsors .last {
+	width: auto;
+    max-width: 100px;
+    max-height: 60px;
+}
+
+main .section5 {
+	padding: 40px 20px 70px;
+    text-align: center;
+}
+
+main .section5 .center {
+	max-width: 1260px;
+    margin: 0 auto;
+}
+
+main .section5 .center h3 {
+	font-weight: 600;
+    color: #273849;
+    margin: 1em 0;
+}
+
+main .section5 .center form {
+	position: relative;
+    max-width: 550px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+main .section5 .center form .email {
+	width: 100%;
+    box-sizing: border-box;
+    padding: 10px 80px 10px 20px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+main .section5 .center form .submit {
+	position: absolute;
+    padding: 4px 20px;
+    margin: 0;
+    height: calc(100% - 8px);
+    right: 4px;
+    top: 4px;
+    font-size: 1.05em;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    border-radius: 2em;
+    color: #fff;
+    background-color: #4fc08d;
+    box-sizing: border-box;
+    border: 1px solid #4fc08d;
+}
+
+main .section5 .center p a {
+	text-decoration: none;
+	color: #4fc08d;
+}
+
+footer {
+	background: #475050;
+	padding: 40px 0;
+    color: #fff;
+    text-align: center;
+}
+
+footer p {
+	word-spacing: 0.05em;
+	margin: 1em 0;
+}
+
+footer p a {
+    color: #fff;
+    margin: 0 5px;
+}
+
+footer p a i {
+	font-size: 18px
+}
+
+footer p .license {
+	text-decoration: none;
+	font-weight: 700;
+}
+
+
+@media all and (min-width: 900px) {
+	header .small-nav {
+		display: none;
+	}
+
+	main .right .vue {
+		display: none;
+	}
+}
+
+@media all and (max-width: 900px) {
+	header {
+		padding: 10px 0 0 15px;
+	}
+
+	header span,nav {
+		display: none;
+	}
+
+	main .section1 .center {
+		text-align: center;
+	}
+
+	main .section1 .center .left {
+    	display: block;
+		margin: 0 auto;
+		width: 90%;
+	}
+
+	main .section1 .left img {
+	float: none;
+    width: 140px;
+    margin-right: 0px;
+    margin-top: 0px;
+	}
+
+	main .section1 .center .right  {
+		width: 90%;
+	}
+
+	main .section1 .right h1 {
+		font-size: 1.8em;
+	}
+
+	main .right .button {
+		font-size: 0.7em;
+	}
+
+	main .right .logo-1 {
+		font-size: 22px;
+		top: 4px;
+		left: -11px;
+	}
+
+	main .right .logo-2 {
+		font-size: 22px;
+		top: 4px;
+		left: -10px;
+	}
+
+	body {
+		font-size: 14px;
+	}
+
+	main .section3 .center .point {
+		display: block;
+		margin: 0 auto;
+		width: 250px;
+	}
+}

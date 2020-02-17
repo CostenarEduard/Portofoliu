@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>AdminPannel</title>
+		<meta charset="utf-8">
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="Costenar Eduard" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+		<link href="css/all.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<div class="page-contianer">
+			<aside class="hidden-xs">
+				<div class="logo"><strong>Admin</strong>LTE</div>
+				<nav>
+					<div class="nav-user">
+						<img src="img/user2-160x160.jpg" class="img-circle">
+						<div class="nav-user-details">
+							<p>Alexander Pierce</p>
+							<a href="#"><div class="green-circle"></div>Online</a>
+						</div>
+					</div>
+					<form>
+						<input type="text" name="Search" placeholder="Search...">
+						<i class="fas fa-search"></i>
+					</form>
+					<ul>
+						<li class="aside-nav-header">MAIN NAVIGATION</li>
+						<li class="hov">
+							<div class="aside-nav-float">
+								<div><i class="fas fa-tachometer-alt"></i>  Dashbord</div>
+								<div class="nav-arrow"><i class="fas fa-chevron-left"></i></div>
+							</div>
+						</li>
+						<li class="hov">
+							<div class="aside-nav-float">
+								<div><i class="far fa-copy"></i>  Layout Options</div>
+								<div class="nav-margin"><i class="badge" style="background-color: #3c8dbc;">4</i></div>
+							</div>
+						</li>
+						<li class="hov">
+							<div class="aside-nav-float">
+								<div><i class="fas fa-th"></i>  Widgets</div>
+								<div class="nav-margin"><i class="badge" style="background-color: #00a65a;">new</i></div>
+							</div> 
+						</li>
+						<li class="hov">
+							<div class="aside-nav-float">
+								<div><i class="fas fa-chart-pie"></i></i>  Chart</div>
+								<div class="nav-arrow"><i class="fas fa-chevron-left"></i></div>
+							</div> 
+						</li>
+						<li class="hov">
+							<div class="aside-nav-float">
+								<div><i class="fa fa-laptop"></i>  UI Elements</div>
+								<div class="nav-arrow"><i class="fas fa-chevron-left"></i></div>
+							</div> 
+						</li>
+						<li class="hov">
+							<div class="aside-nav-float">
+								<div><i class="fa fa-edit"></i>  Forms</div>
+								<div class="nav-arrow"><i class="fas fa-chevron-left"></i></div>
+							</div> 
+						</li>
+						<li class="hov">
+							<div class="aside-nav-float">
+								<div><i class="fa fa-table"></i>  Tables</div>
+								<div class="nav-arrow"><i class="fas fa-chevron-left"></i></div>
+							</div> 
+						</li>
+						<li class="hov">
+							<div class="aside-nav-float">
+								<div><i class="fa fa-calendar"></i>  Calendar</div>
+								<div class="nav-margin">
+									<i class="badge" style="background-color: #0073b7;">17</i>
+									<i class="badge" style="background-color: #dd4b39;">3</i>
+								</div>
+							</div> 
+						</li>
+						<li class="hov">
+							<div class="aside-nav-float">
+								<div><i class="fa fa-envelope"></i>  MailBox</div>
+								<div class="nav-margin">
+									<i class="badge" style="background-color: #dd4b39;">5</i>
+									<i class="badge" style="background-color: #00a65a;">16</i>
+									<i class="badge" style="background-color: #f39c12;">12</i>
+								</div>
+							</div> 
+						</li>
+						<li class="hov">
+							<div class="aside-nav-float">
+								<div><i class="fa fa-folder"></i>  Examples</div>
+								<div class="nav-arrow"><i class="fas fa-chevron-left"></i></div>
+							</div> 
+						</li>
+						<li class="hov">
+							<div class="aside-nav-float">
+								<div><i class="fa fa-share"></i>  Multilevel</div>
+								<div class="nav-arrow"><i class="fas fa-chevron-left"></i></div>
+							</div> 
+						</li>
+						<li class="hov">
+							<div class="aside-nav-float">
+								<div><i class="fa fa-book"></i>  Documentation</div>
+							</div> 
+						</li>
+						<li class="aside-nav-header">LABELS</li>
+						<li class="hov">
+							<div class="aside-nav-float">
+								<div><i class="far fa-circle text-red" style="color:#dd4b39;"></i>  Important</div>
+							</div> 
+						</li>
+						<li class="hov">
+							<div class="aside-nav-float">
+								<div><i class="far fa-circle text-red" style="color:#f39c12;"></i>  Warning</div>
+							</div> 
+						</li>
+						<li class="hov">
+							<div class="aside-nav-float">
+								<div><i class="far fa-circle text-red" style="color:#00c0ef;"></i>  Information</div>
+							</div> 
+						</li>
+					</ul>
+				</nav>
+			</aside>
+			<div class="main-container">
+				<div class="large-logo logo visible-xs"><strong>Admin</strong>LTE</div>
+				<header>
+					<i class="fas fa-bars"></i>
+					<div class="right">
+						<i class="far fa-envelope"><span class="badge" style="background-color: #00a65a">4</span></i>
+						<i class="far fa-bell"><span class="badge" style="background-color: #f39c12">10</span></i>
+						<i class="far fa-flag"><span class="badge" style="background-color: #dd4b39">9</span></i>
+						<div class="user">
+							<img src="img/user2-160x160.jpg" class="img-circle">
+							<span class="hidden-xs">Alexander Pierce</span>
+						</div>
+						<i class="fas fa-cogs"></i>
+					</div>
+				</header>
+				<main>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-12">
+								<h3>Dashboard<small> Version 2.0</small></h3>
+							</div>
+							<div class="col-sm-6 col-md-3">
+								<div class="box">
+									<div class="icon-container icon-container-blue">
+										<i class="fas fa-cog"></i>
+									</div>
+									<div class="text-container">
+										<p>CPU TRAFFIC</p>
+										<h4>90%</h4>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-3">
+								<div class="box">
+									<div class="icon-container icon-container-red"><i class="fab fa-google-plus-g"></i></div>
+									<div class="text-container">
+										<p>LIKES</p>
+										<h4>41,410</h4>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-3">
+								<div class="box">
+									<div class="icon-container icon-container-green"><i class="fas fa-shopping-cart"></i></div>
+									<div class="text-container">
+										<p>SALES</p>
+										<h4>760</h4>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-3">
+								<div class="box">
+									<div class="icon-container icon-container-orange"><i class="fas fa-users"></i></div>
+									<div class="text-container">
+										<p>NEW MEMBERS</p>
+										<h4>2,000</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="section">
+									<div class="box-header"><h4>Monthly Recap Report</h4></div>
+									<div class="box-body">
+										<div class="col-md-8">
+											<p><strong>Sales: 1 Jan, 2014 - 30 Jul, 2014</strong></p>
+											<div class="graf">Grafic</div>
+										</div>
+										<div class="col-md-4 goal-graf">
+											<p><strong>Goal Completion</strong></p>
+											<div>
+												<div class="progress-text">
+													<p><strong>Add Products to Cart</strong></p>
+													<p><strong>160</strong>/200</p>
+												</div>
+												<div class="progress">
+  													<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%"></div>
+  												</div>
+											</div>
+											<div>
+												<div class="progress-text">
+													<p><strong>Complete Purchase</strong></p>
+													<p><strong>310</strong>/400</p>
+												</div>
+												<div class="progress">
+  													<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%"></div>
+  												</div>
+											</div>
+											<div>
+												<div class="progress-text">
+													<p><strong>Visit Premium Page</strong></p>
+													<p><strong>480</strong>/500</p>
+												</div>
+												<div class="progress">
+  													<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%"></div>
+  												</div>
+											</div>
+											<div>
+												<div class="progress-text">
+													<p><strong>Send Inquiries</strong></p>
+													<p><strong>250</strong>/500</p>
+												</div>
+												<div class="progress">
+  													<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%"></div>
+  												</div>
+											</div>
+										</div>
+									</div>
+									<div class="box-header"></div>
+									<div class="box-body">
+										<div class="col-sm-12 col-md-12">
+											<div class="box-footer">
+												<div class="description col-xs-6 col-md-3">
+													<div style="color:#00a65a;"><i class="fas fa-caret-up"></i> 17%</div>
+													<div><strong>$35,210.43</strong></div>
+													<div>TOTAL REVENUE</div>
+												</div>
+												<div class="line"></div>
+												<div class="description col-xs-6 col-md-3">
+													<div style="color:#f39c12;"><i class="fas fa-caret-left"></i> 0%</div>
+													<div><strong>$10,390.90</strong></div>
+													<div>TOTAL COST</div>
+												</div>
+												<div class="line"></div>
+												<div class="description col-xs-6 col-md-3">
+													<div style="color:#00a65a;"><i class="fas fa-caret-up"></i> 20%</div>
+													<div><strong>$24,813.53</strong></div>
+													<div>TOTAL PROFIT</div>
+												</div>
+												<div class="line"></div>
+												<div class="description col-xs-6 col-md-3">
+													<div style="color:#dd4b39;"><i class="fas fa-caret-down"></i> 18%</div>
+													<div><strong>1200</strong></div>
+													<div>GOAL COMPLETIONS</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12 col-md-8" style="padding: 0px">
+								<div style="margin: 0 15px;">
+								<div class="section" style="border-top-color: #00a65a;">
+									<div class="box-header"><h4>Visitors Report</h4></div>
+									<div class="box-body" style="padding: 0px;">
+										<div class="col-sm-9 graf">Harta</div>
+										<div class="col-md-3 box-panel-right">
+											<div class="box-panel">
+												<div class="bar">
+													<div class="line" style="height: 25px; width: 4px;"></div>
+													<div class="line" style="height: 1px; width: 4px;"></div>
+													<div class="line" style="height: 25px; width: 4px;"></div>
+													<div class="line" style="height: 1px; width: 4px;"></div>
+													<div class="line" style="height: 5px; width: 4px;"></div>
+													<div class="line" style="height: 10px; width: 4px;"></div>
+													<div class="line" style="height: 1px; width: 4px;"></div>
+												</div>
+												<p><strong>8390</strong></p>
+												<p style="font-size: 12px;">VISITS</p>
+											</div>
+											<div class="box-panel">
+												<div class="bar">
+													<div class="line" style="height: 25px; width: 4px;"></div>
+													<div class="line" style="height: 1px; width: 4px;"></div>
+													<div class="line" style="height: 25px; width: 4px;"></div>
+													<div class="line" style="height: 1px; width: 4px;"></div>
+													<div class="line" style="height: 5px; width: 4px;"></div>
+													<div class="line" style="height: 10px; width: 4px;"></div>
+													<div class="line" style="height: 1px; width: 4px;"></div>
+												</div>
+												<p><strong>30%</strong></p>
+												<p style="font-size: 12px;">REFERRALS</p>
+											</div>
+											<div class="box-panel">
+												<div class="bar">
+													<div class="line" style="height: 25px; width: 4px;"></div>
+													<div class="line" style="height: 1px; width: 4px;"></div>
+													<div class="line" style="height: 25px; width: 4px;"></div>
+													<div class="line" style="height: 1px; width: 4px;"></div>
+													<div class="line" style="height: 5px; width: 4px;"></div>
+													<div class="line" style="height: 10px; width: 4px;"></div>
+													<div class="line" style="height: 1px; width: 4px;"></div>
+												</div>
+												<p><strong>70%</strong></p>
+												<p style="font-size: 12px;">ORGANIC</p>
+											</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-12 col-md-6">
+									<div class="section" style="border-color: #f39c12">
+										<div class="box-header"><h4>Direct Chat</h4></div>
+										<div class="chat-container">
+											<div class="chat-conatiener-message">
+												<div class="top-chat-container left-message">	
+													<div class="chat-name"><p>Alexander Pierce</p></div>
+													<div class="chat-time"><p>23 Jan 2:00 pm</p></div>
+												</div>
+												<div class="bottom-chat-container left-message">
+													<img src="img/user1-128x128.jpg">
+													<div class="chat-content left-message"><p>Is this template really for free? That's unbelievable!</p></div>
+												</div>
+											</div>
+											<div class="chat-conatiener-message">
+												<div class="top-chat-container right-message">	
+													<div class="chat-name"><p>Sarah Bullock</p></div>
+													<div class="chat-time"><p>23 Jan 2:05 pm</p></div>
+												</div>
+												<div class="bottom-chat-container right-message">
+													<img src="img/user3-128x128.jpg">
+													<div class="chat-content right-message"><p>You better believe it!</p></div>
+												</div>
+											</div>
+											<div class="chat-conatiener-message">
+												<div class="top-chat-container left-message">	
+													<div class="chat-name"><p>Alexander Pierce</p></div>
+													<div class="chat-time"><p>23 Jan 5:37 pm</p></div>
+												</div>
+												<div class="bottom-chat-container left-message">
+													<img src="img/user1-128x128.jpg">
+													<div class="chat-content left-message"><p>Working with AdminLTE on a great new app! Wanna join?</p></div>
+												</div>
+											</div>
+											<div class="chat-conatiener-message">
+												<div class="top-chat-container right-message">	
+													<div class="chat-name"><p>Sarah Bullock</p></div>
+													<div class="chat-time"><p>23 Jan 6:10 pm</p></div>
+												</div>
+												<div class="bottom-chat-container right-message">
+													<img src="img/user3-128x128.jpg">
+													<div class="chat-content right-message"><p>I would love to.</p></div>
+												</div>
+											</div>	
+										</div>
+										<div class="chat-input-container">
+											<input type="text" placeholder="Type Message ...">
+											<button>Send</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-12 col-md-6">
+									<div class="section" style="border-color:#dd4b39;">
+										<div class="box-header"><h4>Latest Members</h4></div>
+										<div class="members-list">
+											<div class="member">
+												<img src="img/user1-128x128.jpg">
+												<div class="member-details">
+													<a href="#">Alexander Pierce</a>
+													<p>Today</p>
+												</div>
+											</div>
+											<div class="member">
+												<img src="img/user8-128x128.jpg">
+												<div class="member-details">
+													<a href="#">Norman</a>
+													<p>Yesterday</p>
+												</div>
+											</div>
+											<div class="member">
+												<img src="img/user7-128x128.jpg">
+												<div class="member-details">
+													<a href="#">Jane</a>
+													<p>12 Jan</p>
+												</div>
+											</div>
+											<div class="member">
+												<img src="img/user6-128x128.jpg">
+												<div class="member-details">
+													<a href="#">John</a>
+													<p>12 Jan</p>
+												</div>
+											</div>
+										</div>
+										<div class="members-list">
+											<div class="member">
+												<img src="img/user2-160x160.jpg">
+												<div class="member-details">
+													<a href="#">Alexander</a>
+													<p>13 Jan</p>
+												</div>
+											</div>
+											<div class="member">
+												<img src="img/user5-128x128.jpg">
+												<div class="member-details">
+													<a href="#">Sarah</a>
+													<p>14 Jan</p>
+												</div>
+											</div>
+											<div class="member">
+												<img src="img/user4-128x128.jpg">
+												<div class="member-details">
+													<a href="#">Nora</a>
+													<p>15 Jan</p>
+												</div>
+											</div>
+											<div class="member">
+												<img src="img/user3-128x128.jpg">
+												<div class="member-details">
+													<a href="#">Nadia</a>
+													<p>15 Jan</p>
+												</div>
+											</div>
+										</div>
+										<div class="more-members">
+											<a href="#">View All Users</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-12">
+										<div class="section" style="border-color:#00c0ef">
+											<div class="box-header"><h4>Latest Orders</h4></div>
+										</div>
+									</div>
+							</div>
+							<div class="col-sm-12 col-md-4">
+								<div class="info-box">
+									<div class="info-box-bg" style="background-color: #f39c12;">
+										<div class="info-box-icon"><i class="fas fa-tag"></i></div>
+										<div class="inner-info-box">
+											<div class="info-box-text">Inventory</div>
+											<div class="info-box-number">5,200</div>
+											<div class="slim-progres-bar">
+												<div class="white-progres" style="width: 50%;"></div>
+											</div>
+											<div class="progress-description">50% Increase in 30 Days</div>
+										</div>
+									</div>
+									<div class="info-box-bg" style="background-color: #00a65a">
+										<div class="info-box-icon"><i class="far fa-heart"></i></div>
+										<div class="inner-info-box">
+											<div class="info-box-text">Mentions</div>
+											<div class="info-box-number">92,050</div>
+											<div class="slim-progres-bar">
+												<div class="white-progres" style="width: 20%;"></div>
+											</div>
+											<div class="progress-description">20% Increase in 30 Days</div>
+										</div>
+									</div>
+									<div class="info-box-bg" style="background-color: #dd4b39">
+										<div class="info-box-icon"><i class="fas fa-cloud-download-alt"></i></div>
+										<div class="inner-info-box">
+											<div class="info-box-text">Downloads</div>
+											<div class="info-box-number">114,381</div>
+											<div class="slim-progres-bar">
+												<div class="white-progres" style="width: 70%;"></div>
+											</div>
+											<div class="progress-description">70% Increase in 30 Days</div>
+										</div>
+									</div>
+									<div class="info-box-bg" style="background-color: #00c0ef">
+										<div class="info-box-icon"><i class="far fa-comment"></i></div>
+										<div class="inner-info-box">
+											<div class="info-box-text">Direct Messages</div>
+											<div class="info-box-number">163,921</div>
+											<div class="slim-progres-bar">
+												<div class="white-progres" style="width: 40%;"></div>
+											</div>
+											<div class="progress-description">40% Increase in 30 Days</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-12 col-md-4">
+								<div class="section" style="height: 300px;">2</div>
+							</div>
+						</div>	
+					</div>
+				</main>
+			</div>
+		</div>
+	</body>
+</html>
