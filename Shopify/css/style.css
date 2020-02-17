@@ -1,0 +1,368 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.background-top {
+	width: 100%;
+	height: 150px;
+	background-color: #5c6ac3;
+	position: relative;
+	color: white;
+	text-align: center;
+	max-width: 1600px;
+	margin: 0 auto;
+	overflow: visible;
+}
+
+.background-top .logo {
+	position: absolute;
+	background-image: url('../img/shopify-logo.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 50px;
+    width: 160px;
+	left: 50%;
+    transform: translate(-50%);
+}
+
+.background-top .text {
+	padding-top: 100px;
+}
+
+.background-top .text h1 {
+	font-size: 55px;
+	letter-spacing: 0px;
+	font-weight: 600;
+}
+
+.background-top .text h3 {
+	font-size: 37px;
+	letter-spacing: 0px;
+	font-weight: 500;
+	margin-top: 15px;
+}
+
+.background-top .mail {
+	display: flex;
+	width: 35%;
+	margin: 0 auto;
+	padding: 30px 0 0 0;
+}
+
+.background-top .mail input {
+    display: inline-block;
+    padding: 1em 1em;
+    color: #212b35;
+    font-size: 1em;
+    box-shadow: 0 0 0 1px #c4cdd5;
+    border: 0;
+    border-radius: 5px;
+	background-color: #ffffff;
+	margin: 0 15px 0 0;
+	width: 100%;
+}
+
+.background-top .mail input:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+.background-top .mail button {
+	box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
+    background-color: #212b35;
+    color: #ffffff;
+    display: inline-block;
+    padding: 1.0625em 1.875em;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1.133;
+    text-align: center;
+    cursor: pointer;
+	min-width: 165px;
+    border-width: 0;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.background-top .mail button:hover {
+	box-shadow: 0 5px 25px 0 rgba(0,0,0,0.25);
+	background-color: #151c22;
+    color: #ffffff;
+}
+
+.background-top .mail button:focus {
+	box-shadow: 0 0 0.1875em 0.1875em rgba(33,43,53,0.5);
+	text-decoration: none;
+	outline: none;
+}
+
+.background-top p {
+	font-size: 12px;
+	padding-top: 15px;
+	width: 35%;
+	margin: 0 auto;
+}
+
+.background-top .container {
+	width: 66%;
+	margin: 0 auto;
+	height: 450px;
+	padding: 30px 0 0 0;
+}
+
+.background-top .device {
+	background-image: url('../img/device.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 100%;
+	background-position: top;
+}
+
+.back-img {
+	background-image: url('../img/waves.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0 auto;
+	max-width: 1600px;
+	height: 715px;
+	background-position: top;
+}
+
+.row {
+	margin-left: auto;
+	margin-right: auto; 
+	width: 1000px;
+	height: 250px;
+	padding: 0 20px;
+	position: absolute;
+	top: 953px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.row .column {
+	float: left;
+	width: 31%;
+	margin-right:20px;
+}
+
+.row .column i {
+	font-size: 40px;
+	color: #5c6ac4;
+	margin-bottom: 15px;
+}
+
+.row .column h3 {
+	color: #212b35;
+	margin-bottom: 12px;
+}
+
+.row .column p {
+	color: #637381;
+	font-weight: 400;
+	line-height: 22px;
+}
+
+.mid-section {
+	position: absolute;
+	top: 300px;
+	width: 100%;
+}
+
+.mid-section .line {
+	border-top: 1px solid #dfe3e8;
+	height: 1px;;
+	width: 100%;
+}
+
+.mid-section .content-box {
+	height: 100px;
+	width: 100%;
+}
+
+.mid-section .content-box .box1 {
+	text-align: center;
+}
+
+.mid-section .content-box img {
+	margin-top: 30px;
+	width: 110px;
+}
+
+.mid-section h2 {
+	font-size: 20px;
+	margin-top: 80px;
+	text-align: center;
+	width: 56%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.mid-section p {
+	text-align: center;
+	color: #454f5b;
+	font-weight: 600;
+	font-size: 14px;
+	margin-top: 20px;
+}
+
+.mid-section .button-container {
+	width: 170px;
+	margin: 50px auto 100px auto;
+}
+
+.mid-section .button-container button {
+	display: inline-block;
+    padding: 1.0625em 1.875em;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1.133;
+    transition: 150ms ease;
+    transition-property: background-color, border-color, box-shadow, color;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
+    background-color: #5c6ac4;
+    color: #ffffff;
+    border-width: 0;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.mid-section .button-container button:hover {
+	background-color: #202e78;
+	box-shadow: 0 5px 25px 0 rgba(0,0,0,0.25);
+}
+
+.mid-section .button-container button:focus {
+	box-shadow: 0 0 0.1875em 0.1875em rgba(33,43,53,0.5);
+	text-decoration: none;
+	outline: none;
+}
+
+.footer {
+	float: right;
+}
+
+.footer a {
+	text-decoration: none;
+	margin: 0 0 0 20px;
+	padding-bottom: 30px;
+	cursor: pointer;
+    color: #5c6ac4; 
+}
+
+@media all and (max-width: 1100px) {
+	.background-top .mail {
+		display: flex;
+		width: 60%;
+		margin: 0 auto;
+		padding: 30px 0 0 0;
+	}
+
+	.background-top p {
+		width: 60%;
+	}
+
+	.background-top .text h1 {
+		font-size: 28px;
+	}
+	
+	.background-top .text h3 {
+		font-size: 26px;
+	}
+
+	.row {
+		position: absolute;
+		top: 800px;
+		left: 50%;
+		transform: translate(-50%);
+		width: 740px;
+	}
+
+	.row .column {
+		width: 30%;
+	}
+
+	.mid-section {
+		width: 90%;
+	}
+
+	.mid-section .content-box {
+		height: 180px;
+	}
+
+	.mid-section h2 {
+		font-size: 18px;
+		width: 70%;
+	}
+}
+
+@media all and (max-width: 780px) {
+	.background-top .mail {
+		width: 90%;
+	}
+	.background-top .mail {
+		flex-direction: column;
+	}
+
+	.background-top .mail input{
+		width: calc(100% - 33px);
+		margin-bottom: 15px;
+	}
+
+	.row {
+		left: 0;
+		transform: translate(0);
+		width: auto;
+	}
+
+	.row .column {
+		float: none;
+		width: 90%;
+		margin: 0 auto 20px auto;
+	}
+
+	.mid-section {
+		top: 520px;
+		width: 90%;
+	}
+
+	.mid-section h2 {
+		width: 90%;
+	}
+}
+
+@media all and (max-width: 650px) {
+	.mid-section .content-box {
+		height: 230px;
+	}
+}
+
+@media all and (max-width: 600px) {
+	.mid-section {
+		top: 600px;
+	} 
+}
+
+@media all and (max-width: 450px) {
+	.mid-section {
+		top: 700px;
+	} 
+}
+
+@media all and (max-width: 400px) {
+	.mid-section .content-box {
+		height: 400px;
+	}
+}
+
+@media all and (max-width: 330px) {
+	.mid-section {
+		top: 800px;
+	} 
+}

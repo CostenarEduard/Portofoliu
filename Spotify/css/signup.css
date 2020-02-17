@@ -1,0 +1,216 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 450px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    display: block;
+    text-align: center;
+}
+
+.btn {
+    max-width: 320px;
+    min-width: 280px;
+    font-size: 14px;
+    padding: 16px 48px 16px;
+    margin-bottom: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 2px;
+    transition-duration: .3s;
+}
+
+
+header {
+    height: auto;
+    padding: 24px 0;
+    border-bottom: 1px solid #dfe0e6;
+}
+
+header .logo-black {
+    width: 197px;
+    height: 59px;
+    background-image: url(../img/spotify-logo-black.png);
+    background-size: contain;
+    margin: 0 auto;
+}
+
+main {
+    padding-top: 30px;
+}
+
+main .btn-fb {
+    background-color: #3B5998;
+}
+
+main .btn-fb:hover {
+    background-color: #3a61b3;
+}
+
+main .line {
+    display: flex;
+    align-items: center;
+}
+
+main form h3 {
+    font-size: 18px;
+    margin-top: 8px;
+    margin-bottom: 18px;
+}
+
+main form input {
+    height: 48px;
+    margin-bottom: 16px;
+    padding: 0 12px;
+    border: 1px solid #dfe0e6;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+main form input::placeholder {
+    font-size: 14px;
+    letter-spacing: .5px;
+}
+
+main form input:focus::placeholder {
+    color:#babbbf;
+    transition: 1s;
+}
+
+main form .all-length {
+    width: 100%;
+}
+
+main form p {
+    color: #88898c;
+    font-size: 14px;
+    letter-spacing: .5px;
+}
+
+main form .left {
+    text-align: left;
+}
+
+main form .date {
+    display: flex;
+    justify-content: space-between;
+}
+
+main form .date .small {
+    width: 21%
+}
+
+main form .date .big {
+    width: 47%;
+    height: 48px;
+    margin-bottom: 16px;
+    padding: 0 12px;
+    background-color: white;
+    border: 1px solid #dfe0e6;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #88898c;
+}
+
+main form .gender {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 16px;
+}
+
+main form .gender input {
+    margin: 0;
+    height: auto;
+}
+
+main form .gender p {
+    margin: 0 20px 0 5px;
+}
+
+main form .conditions {
+    display: flex;
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+main form .conditions input {
+    margin: 0 10px 0 0;
+    height: auto;
+}
+
+main form .conditions p {
+    font-size: 11px;
+    width: 100%;
+    line-height: 15px;
+}
+
+main form .recaptcha {
+    margin-bottom: 16px;
+}
+
+main form .recaptcha div {
+    margin: 0 auto;
+}
+
+main form .form-foot p {
+    color: black;
+    font-size: 11px;
+    line-height: 15px;
+    margin-bottom: 16px;
+}
+
+main form .form-foot a {
+    color: #60ba55;
+    text-decoration: none;
+}
+
+main form .form-foot a:hover {
+    color: #1ED760;
+}
+
+main .btn-grn {
+    background-color: #60ba55;
+}
+
+main .btn-grn:hover {
+    background-color: #1ED760;
+}
+
+main .log-in {
+    color: black;
+}
+
+main .log-in a {
+    text-decoration: none;
+    color: #60ba55;
+}
+
+main .log-in a:hover {
+    color: #1ED760;
+}
+
+@media all and (max-width: 770px) {
+    header {
+        padding: 8px 0;
+    }
+
+    header .logo-black {
+        width: 126px;
+        height: 38px;
+    }
+}

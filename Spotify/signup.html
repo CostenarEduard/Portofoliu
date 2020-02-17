@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign up - Spotify</title>
+    <link rel="stylesheet" type="text/css" href="./css/all.css">
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-black"></div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <button class="btn btn-fb">Sign up with facebook</button>
+            <div class="line">
+                <div style="border-bottom: 1px solid #dfe0e6; width: 100%;"></div>
+                <p style="padding: 0 15px; font-size: 13px; font-weight: 600;">or</p>
+                <div style="border-bottom: 1px solid #dfe0e6; width: 100%;"></div>
+            </div>
+            <form>
+                <h3>Sign up with your email address</h3>
+                <input class="all-length" type="email" data="email" placeholder="Email">
+                <p>hello</p>
+                <input class="all-length" type="email" data="confirm-email" placeholder="Confirm email">
+                <input class="all-length" type="password" data="password" placeholder="Password">
+                <input class="all-length" type="text" data="name" placeholder="What should we call you?">
+                <p class="left">Date of birth</p>
+                <div class="date">
+                    <input class="small" type="text" data="day" placeholder="Day">
+                    <select class="big" name="month" data="month">
+                        <option value="month">Month</option>
+                        <option value="january">January</option>
+                        <option value="february">February</option>
+                        <option value="march">March</option>
+                        <option value="april">April</option>
+                        <option value="may">May</option>
+                        <option value="june">June</option>
+                        <option value="july">July</option>
+                        <option value="august">August</option>
+                        <option value="september">September</option>
+                        <option value="octomber">Octomber</option>
+                        <option value="november">November</option>
+                        <option value="december">December</option>
+                    </select>
+                    <input class="small" type="text" data="year" placeholder="Year">
+                </div>
+                <div class="gender">
+                    <input type="radio" name="gender" value="male"><p>Male</p>
+                    <input type="radio" name="gender" value="female"><p>Female</p>
+                    <input type="radio" name="gender" value="non-binary"><p>Non-binary</p>
+                </div>
+                <div class="conditions">
+                    <input type="checkbox">
+                    <p>Share my registration data with Spotify's content providers for marketing purposes. Note that your data may be transferred to a country outside of the EEA as described in our privacy policy.</p>
+                </div>
+                <div class="g-recaptcha recaptcha" data-sitekey="your_site_key"></div>
+                <div class="form-foot">
+                    <p>By clicking on Sign up, you agree to Spotify's <a href="">Terms and Conditions of Use.</a></p>
+                    <p>To learn more about how Spotify collects, uses, shares and protects your personal data please read Spotify's <a href="">Privacy Policy.</a></p>
+                </div>
+            </form>
+                <button class="btn btn-grn">Sign up</button>
+                <p class="log-in">Already have an account?<a href=""> Log in</a></p>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="sign-script.js"></script>
+</body>
+</html>
