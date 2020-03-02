@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Vue.js</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="author" content="Costenar Eduard">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/all.css">
+
+		<link href="https://fonts.googleapis.com/css?family=Dosis:400,500,600|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<div class="small-nav">
+				<i class="fas fa-bars menu"></i>
+				<img src="img/Vue-logo.png" alt="Vue.js logo">
+			</div>
+			<div class="side-nav">
+				<ul>
+					<li>
+						<form>
+							<input type="text" name="search-box">
+							<i class="fas fa-search"></i>
+						</form>
+					</li>
+					<li>
+						<a href="#"><span class="arrow"></span>Learn</a>
+						<ul class="dropdown">
+							<li><h4>Documentation</h4></li>
+							<li>
+								<ul>
+									<li><a href="#">Guide</a></li>
+									<li><a href="#">PI</a></li>
+									<li><a href="#">Style Guide</a></li>
+									<li><a href="#">Examples</a></li>
+									<li><a href="#">Cookbook</a></li>
+								</ul>
+							</li>
+							<li><h4 class="section">Video Courses</h4></li>
+							<li>
+								<ul>
+									<li><a href="#">Vue Mastery</a></li>
+									<li><a href="#">Vue School</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#"><span class="arrow"></span>Ecosystem</a>
+						<ul class="dropdown">
+							<li><h4>Help</h4></li>
+							<li>
+								<ul>
+									<li><a href="#">Forum</a></li>
+									<li><a href="#">Chat</a></li>
+									<li><a href="#">Meetups</a></li>
+								</ul>
+							</li>
+							<li><h4 class="section">Tooling</h4></li>
+							<li>
+								<ul>
+									<li><a href="#">Devtools</a></li>
+									<li><a href="#">Vue CLI</a></li>
+									<li><a href="#">Vue Loader</a></li>
+								</ul>
+							</li>
+							<li><h4 class="section">Core Libraris</h4></li>
+							<li>
+								<ul>
+									<li><a href="#">Vue Router</a></li>
+									<li><a href="#">Vuex</a></li>
+									<li><a href="#">Vue Server Renderer</a></li>
+								</ul>
+							</li>
+							<li><h4 class="section">News</h4></li>
+							<li>
+								<ul>
+									<li><a href="#">Weekly News</a></li>
+									<li><a href="#">Roadmap</a></li>
+									<li><a href="#">Events</a></li>
+									<li><a href="#">Twitter</a></li>
+									<li><a href="#">Blog</a></li>
+									<li><a href="#">Jobs</a></li>
+									<li><a href="#">DEV Community</a></li>
+								</ul>
+							</li>
+							<li><h4 class="section">Resource Lists</h4></li>
+							<li>
+								<ul>
+									<li><a href="#">Official Repos</a></li>
+									<li><a href="#">Vue Curated</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" class="underline">Team</a>
+					</li>
+					<li>
+						<a href="#"><span class="arrow"></span>Support Vue</a>
+						<ul class="dropdown">
+							<div class="menustyle2">
+								<li><a href="#">One-time Donations</a></li>
+								<li><a href="#">Recurring Pledges</a></li>
+								<li><a href="#">T-Shirt Shop</a></li>
+							</div>
+						</ul>
+					</li>
+					<li>
+						<a href="#"><span class="arrow"></span>Translations</a>
+						<ul class="dropdown">
+							<div class="menustyle2">
+								<li><a href="#">中文</a></li>
+								<li><a href="#">日本語</a></li>
+								<li><a href="#">Русский</a></li>
+								<li><a href="#">한국어</a></li>
+								<li><a href="#">Português</a></li>
+								<li><a href="#">Français</a></li>
+								<li><a href="#">Tiếng Việt</a></li>
+							</div>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<span>Vue.js</span>
+			<nav>
+				<ul>
+					<li>
+						<form>
+							<input type="text" name="search-box">
+							<i class="fas fa-search"></i>
+						</form>
+					</li>
+					<li>
+						<a href="#"><span class="arrow"></span>Learn</a>
+						<ul class="dropdown">
+							<li><h4>Documentation</h4></li>
+							<li>
+								<ul>
+									<li><a href="#">Guide</a></li>
+									<li><a href="#">PI</a></li>
+									<li><a href="#">Style Guide</a></li>
+									<li><a href="#">Examples</a></li>
+									<li><a href="#">Cookbook</a></li>
+								</ul>
+							</li>
+							<li><h4 class="section">Video Courses</h4></li>
+							<li>
+								<ul>
+									<li><a href="#">Vue Mastery</a></li>
+									<li><a href="#">Vue School</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#"><span class="arrow"></span>Ecosystem</a>
+						<ul class="dropdown">
+							<li><h4>Help</h4></li>
+							<li>
+								<ul>
+									<li><a href="#">Forum</a></li>
+									<li><a href="#">Chat</a></li>
+									<li><a href="#">Meetups</a></li>
+								</ul>
+							</li>
+							<li><h4 class="section">Tooling</h4></li>
+							<li>
+								<ul>
+									<li><a href="#">Devtools</a></li>
+									<li><a href="#">Vue CLI</a></li>
+									<li><a href="#">Vue Loader</a></li>
+								</ul>
+							</li>
+							<li><h4 class="section">Core Libraris</h4></li>
+							<li>
+								<ul>
+									<li><a href="#">Vue Router</a></li>
+									<li><a href="#">Vuex</a></li>
+									<li><a href="#">Vue Server Renderer</a></li>
+								</ul>
+							</li>
+							<li><h4 class="section">News</h4></li>
+							<li>
+								<ul>
+									<li><a href="#">Weekly News</a></li>
+									<li><a href="#">Roadmap</a></li>
+									<li><a href="#">Events</a></li>
+									<li><a href="#">Twitter</a></li>
+									<li><a href="#">Blog</a></li>
+									<li><a href="#">Jobs</a></li>
+									<li><a href="#">DEV Community</a></li>
+								</ul>
+							</li>
+							<li><h4 class="section">Resource Lists</h4></li>
+							<li>
+								<ul>
+									<li><a href="#">Official Repos</a></li>
+									<li><a href="#">Vue Curated</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" class="underline">Team</a>
+					</li>
+					<li>
+						<a href="#"><span class="arrow"></span>Support Vue</a>
+						<ul class="dropdown">
+							<div class="menustyle2">
+								<li><a href="#">One-time Donations</a></li>
+								<li><a href="#">Recurring Pledges</a></li>
+								<li><a href="#">T-Shirt Shop</a></li>
+							</div>
+						</ul>
+					</li>
+					<li>
+						<a href="#"><span class="arrow"></span>Translations</a>
+						<ul class="dropdown">
+							<div class="menustyle2">
+								<li><a href="#">中文</a></li>
+								<li><a href="#">日本語</a></li>
+								<li><a href="#">Русский</a></li>
+								<li><a href="#">한국어</a></li>
+								<li><a href="#">Português</a></li>
+								<li><a href="#">Français</a></li>
+								<li><a href="#">Tiếng Việt</a></li>
+							</div>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div class="section1">
+				<div class="center">
+					<div class="left">
+						<img src="img/Vue-logo.png" alt="Vue.js logo">
+					</div>
+					<div class="right">
+						<h2 class="vue">Vue.js</h2>
+						<h1>The Progressive<br>JavaScript Framework</h1>
+						<p>	
+							<a class="button first" href="#">
+								<i class="fas fa-play-circle logo-1"></i>Why Vue.Js?
+							</a>
+							<a class="button second" href="#">Get Started</a>
+							<a class="button third small-img" href="#">
+								<i class="fab fa-github logo-2"></i>GitHub
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="section2">
+				<h3>Special Sponsor</h3>
+				<a href="#">
+					<img src="img/Standard-Library.png" alt="Standard-Library Logo"><br><span>Build APIs you need in minutes instead of days, for free.</span>
+				</a>
+			</div>
+			<div class="section3">
+				<div class="center">
+					<div class="point">
+						<h2>Approachable</h2>
+						<p>Already know HTML, CSS and JavaScript? Read the guide and start building things in no time!</p>
+					</div>
+					<div class="point">
+						<h2>Versatile</h2>
+						<p>An incrementally adoptable ecosystem that scales between a library and a full-featured framework.</p>
+					</div>
+					<div class="point">
+						<h2>Performant</h2>
+						<p>20KB min+gzip Runtime<br>Blazing Fast Virtual DOM<br>Minimal Optimization Efforts<br></p>
+					</div>
+				</div>
+			</div>
+			<div class="section4">
+				<div class="center">
+					<h3>Patreon Sponsors</h3>
+					<a href="#" class="sponsors first"><img src="img/bit.png" class="first"></a>
+					<a href="#" class="sponsors first"><img src="img/tooltwist.png" class="first"></a>
+					<a href="#" class="sponsors first"><img src="img/vueschool.png" class="first"></a>
+					<a href="#" class="sponsors first"><img src="img/vehikl.png" class="first"></a>
+					<a href="#" class="sponsors first"><img src="img/nativescript.png" class="first"></a>
+					<a href="#" class="sponsors first"><img src="img/tee__.png" class="first"></a>
+					<br>
+					<br>
+					<a href="#" class="sponsors second"><img src="img/vuemastery.png"></a>
+					<a href="#" class="sponsors second"><img src="img/laravel.png"></a>
+					<a href="#" class="sponsors second"><img src="img/chaitin.png"></a>
+					<a href="#" class="sponsors second"><img src="img/html_burger.png"></a>
+					<a href="#" class="sponsors second"><img src="img/frontend_love.png"></a>
+					<a href="#" class="sponsors second"><img src="img/onsen_ui.png"></a>
+					<a href="#" class="sponsors second"><img src="img/neds.png"></a>
+					<a href="#" class="sponsors second"><img src="img/icons_8.png"></a>
+					<a href="#" class="sponsors second"><img src="img/vuejobs.png"></a>
+					<a href="#" class="sponsors second"><img src="img/valuecoders.png"></a>
+					<a href="#" class="sponsors second"><img src="img/tidelift.png"></a>
+					<a href="#" class="sponsors second"><img src="img/syncfusion.png"></a>
+					<a href="#" class="sponsors second"><img src="img/opteo.png"></a>
+					<a href="#" class="sponsors second"><img src="img/devsquad.png"></a>
+					<a href="#" class="sponsors second"><img src="img/firestick_tricks.png"></a>
+					<a href="#" class="sponsors second"><img src="img/intygrate.png"></a>
+					<a href="#" class="sponsors second"><img src="img/isle_of_code.png"></a>
+					<a href="#" class="sponsors second"><img src="img/passionate_people.png"></a>
+					<a href="#" class="sponsors second"><img src="img/shopware_ag.png"></a>
+					<a href="#" class="sponsors second"><img src="img/x_team.png"></a>
+					<a href="#" class="sponsors second"><img src="img/vpnranks.png"></a>
+					<a href="#" class="sponsors second"><img src="img/energy_comparison.png"></a>
+					<a href="#" class="sponsors second"><img src="img/bacancy_technology.png"></a>
+					<a href="#" class="sponsors second"><img src="img/bestvpn_co.png"></a>
+					<a href="#" class="sponsors second"><img src="img/blokt_cryptocurrency_news.png"></a>
+					<a href="#" class="sponsors second"><img src="img/jqwidgets_ltd.png"></a>
+					<a href="#" class="sponsors second"><img src="img/y8.png"></a>
+					<a href="#" class="sponsors second"><img src="img/devexpress.png"></a>
+					<a href="#" class="sponsors second"><img src="img/fastcoding_inc.svg"></a>
+					<a href="#" class="sponsors second"><img src="img/usave.png"></a>
+					<br>
+					<a class="sponsor-button" href="#">Become a Sponsor!</a>
+					<div class="open-collective-sponsors">
+						<h3>OpenCollective Sponsors</h3>
+						<h4>Platinum</h4>
+						<a href="#" class="sponsors second last"><img src="https://opencollective.com/vuejs/tiers/platinum-sponsors/0/avatar.svg"></a>
+						<a href="#" class="sponsors second last"><img src="https://opencollective.com/vuejs/tiers/platinum-sponsors/1/avatar.svg"></a>
+						<h4>Gold</h4>
+						<a href="#" class="sponsors second last"><img src="https://opencollective.com/vuejs/tiers/gold-sponsors/0/avatar.svg"></a>
+						<a href="#" class="sponsors second last"><img src="https://opencollective.com/vuejs/tiers/gold-sponsors/1/avatar.svg"></a>
+						<a href="#" class="sponsors second last"><img src="https://opencollective.com/vuejs/tiers/gold-sponsors/2/avatar.svg"></a>
+						<a href="#" class="sponsors second last"><img src="https://opencollective.com/vuejs/tiers/gold-sponsors/3/avatar.svg"></a>
+						<a href="#" class="sponsors second last"><img src="https://opencollective.com/vuejs/tiers/gold-sponsors/4/avatar.svg"></a>
+						<a href="#" class="sponsors second last"><img src="https://opencollective.com/vuejs/tiers/gold-sponsors/5/avatar.svg"></a>
+						<a href="#" class="sponsors second last"><img src="https://opencollective.com/vuejs/tiers/gold-sponsors/6/avatar.svg"></a>
+						<a href="#" class="sponsors second last"><img src="https://opencollective.com/vuejs/tiers/gold-sponsors/7/avatar.svg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="section5">
+				<div class="center">
+					<h3>Subscribe to our Weekly Newsletter</h3>
+					<form>
+						<input class="email" type="email" name="email" placeholder="Email adress">
+						<input class="submit" type="submit" name="submit" value="Subscribe">
+					</form>
+					<p>You can read the previous issues and listen to our podcast at <a href="#">news.vuejs.org.</a></p>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<p>
+				<a href="#"><i class="fab fa-github"></i></a>
+				<a href="#"><i class="fab fa-twitter"></i></a>
+				<a href="#"><i class="fab fa-medium-m"></i></a>
+			</p>
+			<p>Released under the<a class="license" href="#">MIT License</a><br>Copyright © 2014-2019 Evan You</p>
+		</footer>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
