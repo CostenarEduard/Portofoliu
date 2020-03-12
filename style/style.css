@@ -943,6 +943,7 @@ html body .portofolio .container .row .card .buttons a {
 }
 
 html body .portofolio .container .row .card .buttons a .btn-hover {
+  outline: 0;
   width: 90%;
   font-size: 16px;
   font-weight: 600;
